@@ -1,0 +1,1 @@
+pagina creado par ejercicio front-end , las imagenes son tomada de la pagina gamasonic, pagina sin fines de lucro
