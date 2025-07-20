@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>pagina Principal</title>
     
-</head>
-<body>
-    <header>
+  </head>
+    <body>
+      <header>
         <div class="titulo">
             <img src="/img/logo1.png" alt="Logo de Gamaluz" class="logo">
     
 
         </div>
         <div class="subtitulo">
-            <h2>Bienvenido a mi Página Gamaluz</h2>
+            <h1>Gamaluz</h1>
         </div>
         <div class="subtitulo2">
+            <div class="carrito-contenedor">
             <img src="/img/carrito.png" alt="Carrito de Compras" class="carrito">
-            
+             <span id="carrito-contador">0</span>
         </div>
-    </header>
-    <table>
-        </table>
-        <tr>
+        </div> 
+     </header>
+    
+     
 
-        </tr>
-
-    <nav>
+     <nav>
         <a href="/index.html">Inicio</a>
         <a href="productos.html">Producto</a>
         <a href="#oferta">Oferta</a>
         <a href="/contacto.html">Contacto</a>
         <a href="/ubicacion.html">Ubicacion</a>
-    </nav>
-    <main>
-        <h2>Productos - grid </h2>
+     </nav>
+     <main>
+        <h2>Productos </h2>
 
-        <p>Esta es  tu tienda para comenzar tu proyecto.</p>
+        
         <div class="contenedor">
             <div class="productos"><img src="img/dl20l-copia.jpg" alt="Descripción de la imagen">
                                 <div class="precio">$4.990</div>
@@ -53,22 +52,33 @@
             <div class="productos"><img src="img/IMG_6484.jpg" alt="lampara de luz de emergencia">
                                 <div class="precio">$2.990</div>
                             <a href="#" class="btn-comprar">Comprar</a></div>
-            <div class="productos"><img src="img/p1-416x416.png" alt="lampar de luz de emergencia">
+            <div class="productos"><img src="img/p1-416x416.png" alt="lampara de luz de emergencia">
                                 <div class="precio">$1.990</div>
                             <a href="#" class="btn-comprar">Comprar</a></div>
-            <div class="productos"><img src="img/1-2-416x416.png" alt="lampar de luz led emergencia">
+            <div class="productos"><img src="img/1-2-416x416.png" alt="lampara de luz led emergencia">
                                 <div class="precio">$2.990</div>
                             <a href="#" class="btn-comprar">Comprar</a></div>
             <div class ="productos"><img src="img/gx2f.jpg" alt="luz emergencia para industrias">
                                 <div class="precio">$6.990</div>
                                 <a href="#" class="btn-comprar">Comprar</a></div>
         </div>
-    </main>
-    <footer>
+     </main>
+    
+     <footer>
         <p>&copy; 2025  Todos los derechos reservados.</p>
         <p>Clase Talento Tech / Tutor: Maximiliano Torres</p>
         <p>Desarrollado por: Miguel Rivero</p>
         <p>Instructor: Matías Campos</p>
-    </footer>
-</body>
+     </footer>
+     <div id="carrito-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000;">
+     <div style="background:#fffbe6; border:1px solid #ffe600; padding:1rem; margin:5vh auto; width:90%; max-width:400px; position:relative;">
+      <button id="cerrar-modal" style="position:absolute; top:8px; right:8px;">X</button>
+      <h3>Carrito</h3>
+      <ul id="carrito-lista"></ul>
+     <p>Total: $<span id="carrito-total">0</span></p>
+     <button id="vaciar-carrito">Vaciar carrito</button>
+      </div>
+      </div>
+      <script src="js/scripts.js"></script>
+    </body>
 </html>
