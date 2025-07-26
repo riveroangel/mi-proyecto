@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="/css/style.css">
     <title>pagina Principal</title>
     
                 
-</head>
-<body>
+  </head>
+  <body>
     <header>
-         <div class="titulo">
-            <img src="/img/logo1.png" alt="Logo de Gamaluz" class="logo">
-         </div>
 
-         <div class="subtitulo">
-            <h1>Gamaluz</h1>
-         </div>
-            <div class="subtitulo2">
-                <div class="carrito-contenedor">
-                <span id="carrito-contador">0</span>
-                <img src="/img/carrito.png" alt="Carrito de Compras" class="carrito">
-            
-                </div>
-            </div>
+     <div class="titulo">
+        <img src="/img/logo1.png" alt="Logo de Gamaluz" class="logo">
+      </div>
+
+      <div class="subtitulo">
+        <h1>Gamaluz</h1>
+      </div>
+
+      <div class="subtitulo2">
+        <div class="carrito-contenedor">
+           <!--le agrego class ="carrito" aqui-->        
+          <img src="/img/carrito.png" alt="Carrito de Compras" class="carrito"/>
+          <span id="carrito-contador">0</span>
+        </div>
+      </div>
+
+        <!-- Modal del carrito -->
+      <div id="carrito-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000;">
+        <div style="background:#5e500a; border:1px solid #ffe600; padding:1rem; margin:5vh auto; width:90%; max-width:400px; position:relative;">
+          <button id="cerrar-modal" style="position:absolute; top:8px; right:8px;">X</button>
+          <h3>Carrito</h3>
+          <ul id="carrito-lista"></ul>
+          <p>Total: $<span id="carrito-total">0</span></p>
+          <button id="vaciar-carrito">Vaciar carrito</button>
+        </div>
+      </div>
         
-        </header>
+    </header>
+    <div class="espaciador-header"></div>
         
         <nav>
         <a href="/index.html">Inicio</a>
-        <a href="productos.html">Productos</a>
+        <a href="/productos.html">Productos</a>
         <a href="#oferta">Oferta</a>
         <a href="/contacto.html">Contacto</a>
         <a href="/ubicacion.html">Ubicacion</a>
         </nav>
     
-    <main>
+       <main>
         <h2>Contenido Principal</h2>
         <!--<p>Esta es una página modelo para comenzar tu proyecto.</p>-->
         <iframe width="560" height="315" 
@@ -45,14 +61,40 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
         </iframe>
-        </main>
-        <footer>
-        <p>&copy; 2025 Todos los derechos reservados.</p>
-        <p>clase talento tech /tutor maxiliano torres</p>
-        <p>Desarrollado por:Miguel  Rivero</p>
-        <p>instructor: Matias Campos</p>
-        </footer>
+       </main>
+        <footer class="footer">
+          <div class="footer-contenido">
+            <div class="row">
+              <div class="footer-col">
+                <h3>Información</h3>
+                <p>Nos encontramos en:</p>
+                <p>Dirección: Calle Falsa 123</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email:noseas@curioso.com</p>
+              </div>
+               <div class="footer-col">
+            
+                
+                <h3>Síguenos en nuestras redes sociales:</h3>
+                <p><i class="fa-brands fa-youtube"></i> YouTube</p>
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+                
+                </div>
+                <div class="footer-col">
+                
 
-        <script src="js/scripts.js"></script>
-    </body>
+
+                <p>&copy; 2025 Todos los derechos reservados.</p>
+                <p>clase talento tech /tutor maxiliano torres</p>
+                <p>Desarrollado por:Miguel  Rivero</p>
+                <p>instructor: Matias Campos</p>
+                </div>
+          </div>
+          </div>
+        
+      </footer>
+
+        <script src="/js/scripts.js"></script>
+ </body>
 </html>

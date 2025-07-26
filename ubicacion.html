@@ -16,17 +16,20 @@
             <h1>Gamaluz</h1>
         </div>
         <div class="subtitulo2">
-            <img src="/img/carrito.png" alt="Carrito de Compras" class="carrito">
+            <div class="carrito-contenedor">
+                <img src="/img/carrito.png" alt="Carrito de Compras" class="carrito">
+                <span id="carrito-contador">0</span>
+            </div>
         </div>
+        
+        
     </header>
     <table>
         </table>
-        <tr>
-
-        </tr>
+       
 
     <nav>
-        <a href="/index.html">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="productos.html">Producto</a>
         <a href="#oferta">Oferta</a>
         <a href="contacto.html">Contacto</a>
@@ -53,5 +56,15 @@
         <p>Desarrollado por: Miguel Rivero</p>
         <p>Instructor: Matías Campos</p>
     </footer>
+    <div id="carrito-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000;">
+     <div style="background:#fffbe6; border:1px solid #ffe600; padding:1rem; margin:5vh auto; width:90%; max-width:400px; position:relative;">
+      <button id="cerrar-modal" style="position:absolute; top:8px; right:8px;">X</button>
+      <h3>Carrito</h3>
+      <ul id="carrito-lista"></ul>
+     <p>Total: $<span id="carrito-total">0</span></p>
+     <button id="vaciar-carrito">Vaciar carrito</button>
+      </div>
+      </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
