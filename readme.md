@@ -42,8 +42,9 @@ Este proyecto tiene como objetivo:
 
 ## 📚 Autor y créditos
 
-Proyecto realizado por [Miguel Angel Rivero] como parte de un aprendizaje 
+Proyecto realizado por Miguel Angel Rivero como parte de un aprendizaje 
 guiado:
+
 Talento tech /tutor maxiliano torres
 instructor: Matias Campos
 autodidacta.  
