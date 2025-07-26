@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <title>pagina Principal</title>
-    
-                
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reseñas de Clientes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
     <header>
 
      <div class="titulo">
@@ -41,7 +38,6 @@
       </div>
         
     </header>
-    
     <div class="espaciador-header"></div>
         
         <nav>
@@ -52,18 +48,50 @@
         <a href="ubicacion.html">Ubicacion</a>
         </nav>
     
-       <main>
-        <h2>Contenido Principal</h2>
-        <!--<p>Esta es una página modelo para comenzar tu proyecto.</p>-->
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/JkW__7tJl_I" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-        </iframe>
-       </main>
-        <footer class="footer">
+
+  <h2>Lo que dicen nuestros clientes</h2>
+
+  <div class="reseñas-container">
+    <div class="reseña">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 1" />
+      <div class="nombre">María López</div>
+      <div class="comentario">¡Excelente servicio y productos de gran calidad! Volveré a comprar seguro.</div>
+      <div class="estrellas">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="reseña">
+      <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Cliente 2" />
+      <div class="nombre">Carlos Pérez</div>
+      <div class="comentario">Buena atención y entrega rápida. Lo recomiendo totalmente.</div>
+      <div class="estrellas">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+
+    <div class="reseña">
+      <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Cliente 3" />
+      <div class="nombre">Juan Ramírez</div>
+      <div class="comentario">La calidad me sorprendió. Muy satisfecho con la compra.</div>
+      <div class="estrellas">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+  </div>
+<footer class="footer">
           <div class="footer-contenido">
             <div class="row">
               <div class="footer-col">
@@ -97,5 +125,5 @@
       </footer>
 
         <script src="/js/scripts.js"></script>
- </body>
+</body>
 </html>

@@ -13,7 +13,7 @@ h1 {
 
 /* === HEADER === */
 header {
-  position: fixed;
+ /* position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,10 +24,25 @@ header {
   align-items: center;
   background: linear-gradient(90deg, #0078d7 60%, #00a8e8 100%);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem; /*mas fino*/
+ /* min-height: 48px; /* altura mínima para el header */
 
-  height: 50px;
+   display: flex;
+
+
+            justify-content: space-between;
+
+  
+            background-color: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
 }
+.subtitulo {
+  margin-left: auto; /* Empuja el carrito al final, pero deja espacio con el borde */
+  margin-right: 1rem;
+}
+
 .subtitulo2 {
   margin-left: auto; /* Empuja el carrito al final, pero deja espacio con el borde */
   margin-right: 1rem;
@@ -45,7 +60,7 @@ header {
 }
 
 .carrito {
-  width: 60px;
+  width: 40px;
   height: auto;
 }
 
@@ -53,26 +68,28 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background: #b7d700;
+  background: #ff4d00;
   color: #fff;
   border-radius: 50%;
   padding: 2px 8px;
   font-size: 1rem;
   font-weight: bold;
+  z-index: 2;
 }
 
-/* === NAV === */
-nav {
-  position: fixed;
-  top: 60px; /* o el alto real de tu header */
-  width: 100%;
-  z-index: 999;
+.espaciador-header {
+  height: 0.1px; /* misma altura que el header */
+}
 
+  nav {
   background-color: #333;
-  color: white;
+  color: rgb(233, 28, 28);
   padding: 0.5rem;
   text-align: center;
+  position: relative; /* Deja de ser fixed */
 }
+
+
 
 nav a {
   color: white;
@@ -88,8 +105,10 @@ nav a:hover {
 main {
   padding: 2rem;
   text-align: center;
-  margin-top: 120px; /* espacio suficiente para header + nav * (12220px)*/
+  margin-top: 130px; /* espacio suficiente para header + nav * (12220px)*/
 }
+
+
 
 .contenedor {
   display: grid;
@@ -141,6 +160,46 @@ main {
 .btn-comprar:hover {
   background-color: #007bb5;
 }
+/*=== RESEÑAS === */
+
+.reseñas-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .reseña {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .reseña img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .nombre {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .comentario {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .estrellas {
+      color: gold;
+    }
 
 /* === FOOTER === */
 footer {
@@ -182,14 +241,24 @@ footer {
   font-size: 1.2rem;
   cursor: pointer;
 }
+.footer-contenido .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-col {
+    flex: 1 1 200px;
+     /* Asegura que las columnas no se vuelvan demasiado estrechas */
+     /* Espacio entre filas */
+  }
 
-/* === RESPONSIVE === */
-@media (max-width: 728px) {
+
+  @media (max-width: 728px) {
   header {
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 1rem 0;
+    padding: 0.2rem 0.5rem; /* menos espacio */
   }
 
   .logo {
@@ -197,26 +266,34 @@ footer {
   }
 
   .carrito {
-    width: 40px;
+    width: 28px;
     margin: 8px;
   }
 
   nav {
-    top: auto;
-    position: static;/*deja de ser fijo en mobile */
-    width: 100%;
     padding: 0.5rem 0;
     text-align: center;
   }
+
   nav a {
     display: block;
     margin: 0.5rem 0;
   }
 
   main {
-    margin-top: 0; /* elimina el margen superior */
+    margin-top: 30px; /* en móviles ya no necesitamos tanto espacio */
     padding: 1rem;
   }
-}
 
-        
+  .reseñas-container {
+        flex-direction: column;
+        align-items: center;
+   .footer-contenido .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-col {
+    margin: 0.5rem 0;
+  }
+  
+}
