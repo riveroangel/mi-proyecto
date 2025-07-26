@@ -288,7 +288,8 @@ footer {
   .reseñas-container {
         flex-direction: column;
         align-items: center;
-   .footer-contenido .row {
+  }
+  .footer-contenido .row {
     flex-direction: column;
     align-items: center;
   }
